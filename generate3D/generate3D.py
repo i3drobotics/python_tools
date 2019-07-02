@@ -39,7 +39,7 @@ speckle_range = 5
 window_size = 3
 block_size = 15
 min_disp = 0
-num_disp = 64-min_disp
+num_disp = 16*4
 uniqness_ratio = 3
 speckle_window_size = 500
 speckle_range = 5
@@ -49,7 +49,7 @@ speckle_range = 5
 parser = argparse.ArgumentParser()
 parser.add_argument("-c","--calibration_folder",
                     help="folder location of calibration file",
-                    type=str,default='cal/phobos_nuclear')
+                    type=str,default='cal/example/phobos_nuclear')
 parser.add_argument("-i","--input_folder",
                     help="folder location of left and right images",
                     type=str,default='input')
